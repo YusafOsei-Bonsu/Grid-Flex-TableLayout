@@ -4,19 +4,32 @@ h1 {
     font-size: 50px;
 }
 
-.blue {
+section {
+    text-align: justify;
+    padding: 20px 20px 10px;
+}
+
+section:nth-child(odd) {
     background-color: #99d6ff;
 }
 
-.block {
-    text-align: justify;
-    padding: 20px 20px 10px;
+table {
+    border: 1px solid #000000;
 }
 
 tbody {
     background-color: #ffffff;
 }
 
-.left {
-    text-align: left;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+.grid-image {
+    height: 100px;
 }
