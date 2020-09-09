@@ -16,3 +16,7 @@ h1 {
 tbody {
     background-color: #ffffff;
 }
+
+.left {
+    text-align: left;
+}
