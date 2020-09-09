@@ -23,18 +23,54 @@
             <ul>
                 <li><a href="#intro">Introduction</a></li>
                 <li><a href="#browser-support">Browser Support</a></li>
+                <li><a href="#terminology">Basics & Terminology</a></li>
                 <li><a href="#properties">CSS Grid Properties</a></li>
             </ul>
-            <section id="intro" class="blue block">
+            <section id="intro">
                 <h3>Introduction</h3>
-                <p>Grid is a 2D-based layout with the <strong>aim of organising elements in a table-like fashion</strong>. CSS has always been used to lay out our web pages, but it’s never done a very good job of it. First, tables, floats, positioning and inline-block were used, but they essentially left out a lot of important functionality; in response to this, Grid is the very first CSS module created specifically to solve the common layout problems encountered by web developers over the years.</p>
+                <p>Grid is a 2D-based layout with the aim of organising elements in a table-like fashion. CSS has always been used to lay out our web pages, but it’s never done a very good job of it. First, tables, floats, positioning and inline-block were used, but they essentially left out a lot of important functionality; in response to this, Grid is the very first CSS module created specifically to solve the common layout problems encountered by web developers over the years.</p>
             </section>
-            <section id="browser-support" class="block">
+            <section id="browser-support">
                 <h3>Browser Support</h3>
                 <p>The browsers that support the Grid module/layout</p>
                 <img src="./resources/images/grid-browser-support.PNG" alt="The browsers that support Grid">
             </section>
-            <section id="properties" class="blue block">
+            <section id="terminology">
+                <h3>Basics & Terminology</h3>
+                <div class="grid-container">
+                    <div class="grid-item"> 
+                        <h5>Grid Container</h5>
+                        <p>The element on which display: grid is applied. It’s the direct parent of all the grid items. In this example container is the grid container.</p>
+                        <img src="./resources/images/grid-container.PNG" alt="grid container" class="grid-image">
+                    </div>
+                    <div class="grid-item">
+                        <h5>Grid Item</h5>
+                        <p>The children (i.e. <em>direct descendants</em>) of the grid container. Here the item elements are grid items, but sub-item isn’t.</p>
+                        <img src="./resources/images/grid-items.PNG" alt="grid items" class="grid-image">
+                    </div>
+                    <div class="grid-item">
+                        <h5>Grid Line</h5>
+                        <p>The dividing lines that make up the structure of the grid. They can be either vertical (“column grid lines”) or horizontal (“row grid lines”) and reside on either side of a row or column. Here the yellow line is an example of a column grid line.</p>
+                        <img src="./resources/images/grid-line.PNG" alt="grid line" class="grid-image">
+                    </div>
+                    <div class="grid-item">
+                        <h5>Grid Cell</h5>
+                        <p>The space between two adjacent row and two adjacent column grid lines. It’s a single “unit” of the grid. Here’s the grid cell between row grid lines 1 and 2, and column grid lines 2 and 3.</p>
+                        <img src="./resources/images/grid-cells.PNG" alt="grid cell" class="grid-image">
+                    </div>
+                    <div class="grid-item">
+                        <h5>Grid Track</h5>
+                        <p>The space between two adjacent grid lines. You can think of them like the columns or rows of the grid. Here’s the grid track between the second and third row grid lines.</p>
+                        <img src="./resources/images/grid-track.PNG" alt="grid track" class="grid-image">
+                    </div>
+                    <div class="grid-item">
+                        <h5>Grid Area</h5>
+                        <p>The total space surrounded by four grid lines. A grid area may be composed of any number of grid cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.</p>
+                        <img src="./resources/images/grid-area.PNG" alt="grid area" class="grid-image">
+                    </div>
+                </div>
+            </section>
+            <section id="properties">
                 <h3>CSS Grid Properties</h3>
                 <!-- Grid Item properties -->
                 <table class="table" id="grid-item-props">
@@ -63,7 +99,7 @@
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td class="left">grid-column-start, grid-column-end, grid-row-start, grid-row-end</td>
+                            <td style="text-align: left;">grid-column-start, grid-column-end, grid-row-start, grid-row-end</td>
                             <td>Determines a grid item’s location within the grid by referring to specific grid lines. <em>grid-column-start/grid-row-start</em> is the line where the item begins, and <em>grid-column-end/grid-row-end</em> is the line where the item ends.</td>
                         </tr>
                         <tr>
@@ -92,7 +128,7 @@
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td class="left">grid-template-columns, grid-template-rows</td>
+                            <td style="text-align: left;">grid-template-columns, grid-template-rows</td>
                             <td>Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.</td>
                         </tr>
                         <tr>

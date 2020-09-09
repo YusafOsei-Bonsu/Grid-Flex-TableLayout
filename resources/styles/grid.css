@@ -23,11 +23,17 @@ tbody {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 10px;
 }
 
 .grid-item {
+    width: 400px;
+    height: 200px;
     padding: 10px;
+    background-color: lightcoral;
+    border-radius: 2px;
+    overflow: auto;
 }
 
 .grid-image {
