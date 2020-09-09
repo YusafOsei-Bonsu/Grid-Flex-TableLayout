@@ -42,3 +42,7 @@ tbody {
     margin-top: 10px;
     width: 60%;
 }
+
+div[class="card-header"] {
+    text-align: center;
+}
