@@ -23,8 +23,9 @@
             <ul>
                 <li><a href="#intro">Introduction</a></li>
                 <li><a href="#browser-support">Browser Support</a></li>
+                <li><a href="#properties">CSS Grid Properties</a></li>
             </ul>
-            <section id="intro" class="grey block">
+            <section id="intro" class="blue block">
                 <h3>Introduction</h3>
                 <p>Grid is a 2D-based layout with the <strong>aim of organising elements in a table-like fashion</strong>. CSS has always been used to lay out our web pages, but it’s never done a very good job of it. First, tables, floats, positioning and inline-block were used, but they essentially left out a lot of important functionality; in response to this, Grid is the very first CSS module created specifically to solve the common layout problems encountered by web developers over the years.</p>
             </section>
@@ -32,6 +33,50 @@
                 <h3>Browser Support</h3>
                 <p>The browsers that support the Grid module/layout</p>
                 <img src="./resources/images/grid-browser-support.PNG" alt="The browsers that support Grid">
+            </section>
+            <section id="properties" class="blue block">
+                <h3>CSS Grid Properties</h3>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Properties (Grid Item)</th>
+                            <th scope="col">Description (Grid Item)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>align-self</td>
+                            <td>Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>place-self</td>
+                            <td>Sets both the align-self and justify-self properties in a single declaration.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>justify-self</td>
+                            <td>Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td style="text-align: left;">grid-column-start, grid-column-end, grid-row-start, grid-row-end</td>
+                            <td>Determines a grid item’s location within the grid by referring to specific grid lines. <em>grid-column-start/grid-row-start</em> is the line where the item begins, and <em>grid-column-end/grid-row-end</em> is the line where the item ends.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>grid-column, grid-row</td>
+                            <td>Shorthand for <em>grid-column-start</em> + <em>grid-column-end</em>, and <em>grid-row-start</em> + <em>grid-row-end</em>, respectively.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>grid-area</td>
+                            <td>Gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
     </body>
