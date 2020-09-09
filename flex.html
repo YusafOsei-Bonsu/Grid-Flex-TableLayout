@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./resources/styles/flex.css">
-    <title>Flexbox Layout | Grid-Flex-TableLayout</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./grid.html">Grid</a></li>
-          <li class="nav-item"><a class="nav-link active" href="./flex.html">Flex</a></li>
-          <li class="nav-item"><a class="nav-link" href="./table.html">Table</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Flexbox Layout</h1>
-        <ul>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#browser-support">Browser Support</a></li>
-        </ul>
-        <section id="intro" class="grey block">
-            <h3>Introduction</h3>
-            <p>Flexbox (a.k.a Flexible Box) is a layout/module <strong>aiming to provide a more efficient way to layout, align and distribute space among flex items in a container</strong>, even when the size is unknown/dynamic. The main idea is to allow the container to control its items’ size and order to best fill the available space. A flex container expands and shrinks items to fill available space and to prevent overflow, respectively. Flexbox is a direction-oriented layout, in contrast to typical layouts (i.e. vertically-based blocks and horizontally-based inlines); while those work well for pages, they lack flexibility to support large and complex applications.</p>
-        </section>
-        <section id="browser-support" class="block">
-            <h3>Browser Support</h3>
-            <p>The browsers that support the Flexbox module/layout</p>
-            <img src="./resources/images/flex-browser-support.PNG" alt="The browsers that support flexbox">
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./resources/styles/flex.css">
+        <title>Flexbox Layout | Grid-Flex-TableLayout</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Links -->
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./grid.html">Grid</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./flex.html">Flex</a></li>
+            <li class="nav-item"><a class="nav-link" href="./table.html">Table</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Flexbox Layout</h1>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#browser-support">Browser Support</a></li>
+                <li><a href="#properties">CSS Flexbox Properties</a></li>
+            </ul>
+            <section id="intro" class="grey block">
+                <h3>Introduction</h3>
+                <p>Flexbox (a.k.a Flexible Box) is a layout/module <strong>aiming to provide a more efficient way to layout, align and distribute space among flex items in a container</strong>, even when the size is unknown/dynamic. The main idea is to allow the container to control its items’ size and order to best fill the available space. A flex container expands and shrinks items to fill available space and to prevent overflow, respectively. Flexbox is a direction-oriented layout, in contrast to typical layouts (i.e. vertically-based blocks and horizontally-based inlines); while those work well for pages, they lack flexibility to support large and complex applications.</p>
+            </section>
+            <section id="browser-support" class="block">
+                <h3>Browser Support</h3>
+                <p>The browsers that support the Flexbox module/layout</p>
+                <img src="./resources/images/flex-browser-support.PNG" alt="The browsers that support flexbox">
+            </section>
+            <section id="properties" class="grey block">
+                <h3>CSS Flexbox Properties</h3>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr><th scope="col">Property</th><th scope="col">Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Display</td><td>Specifies the HTML element as a flex box</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
 </html>
