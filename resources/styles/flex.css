@@ -1,18 +1,44 @@
 h1 {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: 50px;
 }
 
-.blue {
-    background-color: #99d6ff;
-}
-
-.block {
+section {
     text-align: justify;
     padding: 20px 20px 10px;
 }
 
+section:nth-child(odd) {
+    background-color: #99d6ff;
+}
+
+table {
+    border: 1px solid #000000;
+}
+
 tbody {
     background-color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.flex-item {
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#terminology img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 60%;
 }
