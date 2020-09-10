@@ -16,3 +16,36 @@ section:nth-child(odd) {
 tbody {
     background-color: #ffffff;
 }
+
+#tl-examples table, #tl-examples th, #tl-examples td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#tl-examples table {
+    margin-bottom: 20px;
+}
+
+#tl-examples h4 {
+    font-weight: lighter;
+}
+
+table.a {
+    table-layout: auto;
+    width: 180px;  
+  }
+  
+  table.b {
+    table-layout: fixed;
+    width: 180px;  
+  }
+  
+  table.c {
+    table-layout: auto;
+    width: 100%;  
+  }
+  
+  table.d {
+    table-layout: fixed;
+    width: 100%;  
+  }
