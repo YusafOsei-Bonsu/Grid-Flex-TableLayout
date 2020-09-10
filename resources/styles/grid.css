@@ -39,3 +39,7 @@ tbody {
 .grid-image {
     height: 100px;
 }
+
+button {
+    margin-bottom: 20px;
+}
