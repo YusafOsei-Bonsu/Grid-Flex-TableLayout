@@ -4,13 +4,13 @@ h1 {
     font-size: 50px;
 }
 
-.blue {
-    background-color: #99d6ff;
-}
-
-.block {
+section {
     text-align: justify;
     padding: 20px 20px 10px;
+}
+
+section:nth-child(odd) {
+    background-color: #99d6ff;
 }
 
 tbody {
